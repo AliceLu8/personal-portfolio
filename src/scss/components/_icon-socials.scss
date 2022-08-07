@@ -1,0 +1,25 @@
+.icon-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 4rem;
+}
+
+.icon-socials::after {
+    content: '';
+    width: 1px;
+    height: 1.5rem;
+    background-color: $dark;
+}
+
+// Breakpoints (Media Queries - Small Devices)
+@media screen and (min-width: 700px) {
+    .icon-socials {
+      display: none;
+    }
+  
+    
+  }

@@ -1,0 +1,21 @@
+@use "./reset" as *;
+
+// Color
+$dark: #000000;
+$light: #ffffff;
+$blue: #7ae4ff;
+$yellow: #feae4b;
+$grey: #e3e1e13f;
+$lightGrey: rgb(101, 185, 215);
+$lightYellow: rgb(254, 174, 75, 0.8);
+$red: #ed2024;
+
+// Type
+$bodyFont: 'NTR', sans-serif;
+$headingFont: 'Mukta Vaani', sans-serif;
+
+// General Styles
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;800&family=NTR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+/*
+font-family: 'Mukta Vaani', sans-serif;
+font-family: 'NTR', sans-serif;
+font-family: 'Zen Dots', cursive;
+*/
+
+// Base
+@import "../scss/base/reset.scss";
+@import "../scss/base/settings.scss";
+@import "../scss/base/type.scss";
+
+// Components
+@import "../scss/components/body.scss";
+@import "../scss/components/header.scss";
+@import "../scss/components/icon-socials.scss";
+@import "../scss/components/nav-bar.scss";
+
+// Utilities
+@import "../scss/utilities/functions.scss";
+@import "../scss/utilities/sr-only.scss";
+@import "../scss/utilities/variables.scss";

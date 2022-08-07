@@ -1,0 +1,41 @@
+// Colors
+$textColor: #566268;
+$featureColor: #78b2cf;
+$hover: #4c5990;
+$linkColor: #8eb4bd;
+$socialIconColor: #274247;
+$btnColor: #b09cff;
+$btnHoverColor: #4b9152;
+$activeNav: #3d7aca;
+$activeNavColor: #323639;
+$navHoverColor: #65b9d7;
+$border: #e6e6e6;
+$bgColor: #000b29;
+// $sideNavBgColor: #161D30;
+$sideNavBgColor: #2c3e5b;
+$sideNavHoverColor: #65b9d7;
+$sideActiveNavColor: #323639;
+
+// Breakpoints (Media Queries - Medium Devices)
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+    background-color: rgb(234, 229, 247);
+  }
+
+  section {
+    margin-top: 5rem;
+  }
+}
+
+// Breakpoints (Media Queries - Small Devices)
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+    background-color: rgb(210, 229, 242);
+  }
+
+  section {
+    margin-top: 5rem;
+  }
+}

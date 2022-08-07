@@ -1,0 +1,64 @@
+@use "../utilities/variables" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  color: $textColor;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-family: $headingFont;
+  color: $featureColor;
+  font-weight: 700;
+}
+
+section {
+  margin-top: 5rem;
+  height: 100vh;
+}
+
+p {
+  font-size: 1rem;
+  color: $featureColor;
+  margin: 0;
+}
+
+a {
+  color: $linkColor;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: $hover;
+}
+
+.icon-socials {
+  color: $socialIconColor;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: $btnColor;
+  padding: 0.7rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: $btnHoverColor;
+  color: black;
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: $btnHoverColor;
+  color: black;
+}
