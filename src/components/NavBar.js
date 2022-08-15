@@ -1,37 +1,47 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
+
+// Import React icons
 import { AiOutlineHome } from "react-icons/ai";
-import { VscCode } from "react-icons/vsc";
+import { HiCode } from "react-icons/hi";
 import { HiOutlineMail } from "react-icons/hi";
 
 function NavBar() {
-  const [navActive, setNavActive] = useState("#");
-
   return (
-    <nav>
-      <a
-        href="#"
-        onClick={() => setNavActive("#")}
-        className={navActive === "#" ? "active-nav" : ""}
-      >
-        <AiOutlineHome />
-      </a>
+    <div className="header">
+      <Header />
+      <nav>
+        <ul className="navbar-menu wrapper">
+          <li>
+            <Link to="/home">
+              <div className="icon-desktop">
+                <AiOutlineHome size={25} />
+              </div>
+              Home
+            </Link>
+          </li>
 
-      <a
-        href="#work"
-        onClick={() => setNavActive("#work")}
-        className={navActive === "#about" ? "active-nav" : ""}
-      >
-        <VscCode />
-      </a>
+          <li>
+            <Link to="/work">
+              <div className="icon-desktop">
+                <HiCode size={25} />
+              </div>
+              Work
+            </Link>
+          </li>
 
-      <a
-        href="#contact"
-        onClick={() => setNavActive("#contact")}
-        className={navActive === "#contact" ? "active-nav" : ""}
-      >
-        <HiOutlineMail />
-      </a>
-    </nav>
+          <li>
+            <Link to="/contact">
+              <div className="icon-desktop">
+                <HiOutlineMail size={25} />
+              </div>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
 

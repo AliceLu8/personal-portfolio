@@ -2,7 +2,7 @@ import React from 'react'
 
 function SingleWork() {
   return (
-    <section>SingleWork</section>
+    <div>SingleWork</div>
   )
 }
 

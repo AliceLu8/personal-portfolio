@@ -11,7 +11,7 @@ function PageNotFound() {
         <div className="about-text">
           <p>
             Go to the{" "}
-            <NavLink to="/" className="navlink">
+            <NavLink to="/home" className="navlink">
               Home
             </NavLink>{" "}
             page.

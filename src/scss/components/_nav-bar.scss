@@ -1,66 +1,50 @@
 @use "../utilities/variables" as *;
 
-nav {
-  background-color: $dark;
-  width: 100%;
-  display: block;
-  padding: 0.5rem 1rem;
-  z-index: 2;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
+.navbar-menu {
   display: flex;
-  gap: 3rem;
-  justify-content: center;
 }
 
-nav a {
-  background-color: transparent;
-  padding: 0.5rem;
-  display: flex;
-  color: $light;
-  font-size: 2rem;
+.navbar-menu li {
+  padding: 0 1rem;
 }
 
-nav a:hover {
-  background-color: rgba(142, 148, 172, 0.3);
-  color: $navHoverColor;
-  border-radius: 5rem;
+.navbar-menu li a {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
-nav a.active-nav {
-  background: $activeNavColor;
-  color: $navHoverColor;
-  border-radius: 5rem;
+.icon-desktop {
+  display: none;
 }
 
-// Breakpoints (Media Queries - Medium Devices)
-@media screen and (min-width: 700px) {
-  nav {
-    width: 4rem;
+@media screen and (max-width: 600px) {
+  .navbar-menu {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    background-color: $headerBg;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+  .navbar-menu li {
+    padding: 1rem 0;
+  }
+
+  .navbar-menu li a {
+    font-size: 0.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    position: fixed;
-    left: 5rem;
-    bottom: 20%;
-    background-color: transparent;
-    border: none;
+    padding: 0 2.5rem;
   }
 
-  nav a {
-    color: $sideNavBgColor;
-  }
-
-  nav a:hover {
-    background-color: rgba(90, 94, 109, 0.3);
-    color: $navHoverColor;
-  }
-
-  nav a.active-nav {
-    background: $activeNavColor;
-    color: $navHoverColor;
+  .icon-desktop {
+    display: initial;
   }
 }

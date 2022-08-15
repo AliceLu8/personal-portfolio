@@ -1,41 +1,23 @@
-header {
-  height: 100vh;
-//   padding-top: 8rem;
-  // overflow: hidden;
+@use "../utilities/variables" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+  background-color: $grey;
 }
 
-.header__container {
-  text-align: right;
-  height: 100%;
-  position: relative;
-}
+// .header-section-bg {
+//   background-color: rgb(228, 230, 231, 0.8);
+//   transition: 0.5s;
+// }
 
-.header__container h2{
-    padding-top: 5rem;
-}
-
-.scroll__down {
-  position: absolute;
-  right: 1rem;
-  bottom: 5rem;
-  font-weight: 200;
-  font-size: 0.8rem;
-}
-
-// Breakpoints (Media Queries - Medium Devices)
-@media screen and (max-width: 1024px) {
-  .header {
-    height: 100vh;
-  }
-}
-
-// Breakpoints (Media Queries - Small Devices)
-@media screen and (max-width: 600px) {
-  .header {
-    height: 100vh;
-  }
-
-//   .scroll__down {
-//     display: none;
-//   }
+.logo {
+  width: 60px;
+  margin-top: 0.5rem;
 }

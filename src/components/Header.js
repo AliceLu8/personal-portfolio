@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../logo/logo.png";
 
 function Header() {
-  return (
-    <header>
-      <div className="container header__container">
-        <h2>hello, I'm</h2>
-        <h1>Alice Lu</h1>
-        <h3>a Front-End Web Developer | Designer</h3>
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 50) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
 
-        <a href="#about" className="scroll__down">
-          Scroll Down
-        </a>
-      </div>
-      <span className="sr-only"></span>
-    </header>
+  return (
+    <div>
+      {/* <div className={color ? "header header-section-bg" : "header"}> */}
+      <Link to="/home">
+        <img src={logo} alt="logo" className="logo" />
+        {/* <h1>logo</h1> */}
+      </Link>
+      {/* </div> */}
+    </div>
   );
 }
 

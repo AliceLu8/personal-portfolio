@@ -1,0 +1,110 @@
+@use "../utilities/variables" as *;
+.contact-wrapper {
+    
+.contact-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+  
+//   text-align: center;
+//   padding: 2rem 0 3rem 0;
+//   background-color: grey;
+
+  .connect {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  p {
+    padding-bottom: 0.75rem;
+    color: $textColor;
+  }
+
+  .contact-info {
+    text-align: left;
+  }
+}
+
+.header-socials {
+  padding: 0 0 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  svg {
+    color: $lightYellow;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $lightGrey;
+    }
+  }
+
+  .email-container {
+    p {
+      color: $textColor;
+      font-weight: 600;
+      padding: 3rem 0 1rem 0;
+    }
+
+    // A-link button styling modified from
+    // Codepen source: https://codepen.io/avstorm/pen/oqKbLq
+    // ----- Starting here (Codepen animated button)
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .cta {
+      position: relative;
+      padding: 0.4rem 0.5rem;
+      transition: all 0.2s ease;
+      color: $lightYellow;
+    }
+    .cta:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 1.75rem;
+      background: rgb(9, 34, 68);
+      width: 2.5rem;
+      height: 2.5rem;
+      transition: all 0.3s ease;
+    }
+    .cta span {
+      position: relative;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+    .cta svg {
+      position: relative;
+      top: 0;
+      margin-left: 0.5rem;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #000b29;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+    }
+    .cta:hover:before {
+      width: 100%;
+      background: #78b2cf;
+    }
+    .cta:hover svg {
+      transform: translateX(0);
+    }
+    .cta:active {
+      transform: scale(0.96);
+    }
+    // ----- Ending here (Codepen animated button)
+  }
+}
+}
