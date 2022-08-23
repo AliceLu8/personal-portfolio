@@ -98,7 +98,7 @@ function SingleWork() {
             <Link to="/work">View my other work</Link>
           </div>
           <div className="return-home">
-            <Link to="/home">Return to Home</Link>
+            <Link to="/">Return to Home</Link>
           </div>
         </div>
         <Footer />

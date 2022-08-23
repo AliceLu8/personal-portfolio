@@ -175,8 +175,18 @@
 
     .project-container {
       padding-inline: 2rem;
+
       .carousel {
         width: 25rem;
+      }
+
+      .return {
+        .return-work,
+        .return-home {
+          a {
+            font-size: 1.15rem;
+          }
+        }
       }
     }
   }
@@ -230,12 +240,12 @@
       }
 
       .return {
-        gap: 0.5rem;
+        gap: 0;
         .return-work,
         .return-home {
           a {
             font-size: 1rem;
-            padding: 1rem 0.5rem;
+            padding: 1rem 0;
           }
         }
       }
