@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 function PageNotFound() {
   return (
-    <main className="page page-not-found">
-      <section className="section-wrapper">
+    <section className="page-not-found">
+      <div className="section-wrapper">
         <div className="page-info">
           <h1>Oh No!!! 404.... Page Not Found</h1>
         </div>
@@ -17,8 +17,8 @@ function PageNotFound() {
             page.
           </p>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
 

@@ -1,0 +1,244 @@
+@use "../utilities/variables" as *;
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 2rem 0;
+  margin: 0 auto;
+
+  .banner {
+    width: 40rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    padding: 1rem 0 0 0;
+  }
+
+  .project-container {
+    text-align: left;
+    padding-inline: 10rem;
+    margin-top: 1.5rem;
+
+    h4 {
+      font-size: 1.25rem;
+      color: $yellow;
+    }
+
+    .overview h3 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      color: $darkGrey;
+
+      span {
+        font-size: 1.25rem;
+        color: $textColor;
+        font-family: $bodyFont;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    .team-dur-role {
+      padding: 1.5rem 0;
+    }
+
+    .links {
+      display: flex;
+      padding: 0 0 5rem 0;
+      gap: 10rem;
+      justify-content: center;
+      position: relative;
+
+      a {
+        font-size: 1.15rem;
+        padding: 0.5rem 2rem;
+        text-decoration: none;
+        border: 1px solid $btnHoverColor;
+        color: $featureColor;
+        cursor: pointer;
+
+        // Hover effect "modified" source from CodePen: "https://codepen.io/chancesq/pen/bGpddXE"
+        background-color: #76587a;
+        background-image: linear-gradient(315deg, #76587a 0%, #154465 70%);
+        background-size: 200% 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+        transition: 500ms;
+
+        &:before {
+          // content: '';
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 16px;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 3rem;
+          height: 1rem;
+          background-color: #15223e;
+          background-image: linear-gradient(315deg, #15223e 0%, #304e76 70%);
+          transition: 500ms;
+        }
+        &:hover {
+          background-position: right;
+        }
+        &:hover:before {
+          color: rgba(255, 255, 255, 0.6);
+        }
+        &:focus {
+          outline: none;
+        }
+        // End of hover effect
+      }
+    }
+
+    .design {
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .development {
+      padding-bottom: 2rem;
+      h3 {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+      }
+      p {
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    .carousel {
+      width: 35rem;
+      margin: 0 auto;
+    }
+
+    .take-away {
+      padding-top: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .return {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 10rem;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $lightBgColor;
+
+      .return-work,
+      .return-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        a {
+          padding: 0.75rem 1rem;
+          border-radius: 5px;
+          margin: 0;
+          font-size: 1.35rem;
+          color: $darkGrey;
+          font-weight: bold;
+
+          &:hover {
+            color: $linkColor;
+          }
+
+          &:active {
+            color: $linkColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Queries (Medium Devices)
+@media screen and (max-width: 1024px) {
+  .project-wrapper {
+    .banner {
+      width: 30rem;
+      object-fit: cover;
+    }
+
+    .project-container {
+      padding-inline: 2rem;
+      .carousel {
+        width: 25rem;
+      }
+    }
+  }
+}
+
+// Media Queries (Small Devices)
+@media screen and (max-width: 600px) {
+  .project-wrapper {
+    padding: 3rem 0 0 0;
+
+    .banner {
+      width: 15rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .project-container {
+      padding: 0;
+
+      .overview,
+      .design,
+      .development,
+      .take-away {
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .team-dur-role {
+        h3 {
+          font-size: 1.15rem;
+        }
+        span {
+          font-size: 1rem;
+        }
+      }
+
+      .links {
+        gap: 3rem;
+
+        a {
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+        }
+      }
+
+      .carousel {
+        width: 15rem;
+      }
+
+      .return {
+        gap: 0.5rem;
+        .return-work,
+        .return-home {
+          a {
+            font-size: 1rem;
+            padding: 1rem 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

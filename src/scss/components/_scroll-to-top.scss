@@ -2,18 +2,24 @@
 @use "../utilities/variables" as *;
 
 .scroll-to-top {
-    position: fixed;
-    bottom: 6rem;
-    right: 1.5rem;
-    height: 2rem;
-    width: 2rem;
-    color: $lightGrey;
-   
-    // @media (min-width:$portraitTablet) {
-    //     right: 4.5rem;
-    // }
+  position: fixed;
+  bottom: 8rem;
+  right: 10rem;
+  color: $featureColor;
+}
 
-    // @media (min-width:$landscapeIpad) {
-    //     right: 6rem;
-    // } 
+@media screen and (max-width: 1024px) {
+  .scroll-to-top {
+    right: 5rem;
+
+    svg {
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-to-top {
+    right: 1rem;
+  }
 }

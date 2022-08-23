@@ -1,33 +1,74 @@
 @use "../utilities/variables" as *;
 
-.page {
-  padding: 5rem 2rem;
+.page-not-found {
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
 
   .section-wrapper {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 25%;
+
     .page-info {
       h1 {
-        font-size: 1rem;
-        color: $light;
+        font-size: 2.5rem;
         padding-bottom: 2rem;
       }
     }
 
     .about-text {
-      font-size: 0.75rem;
-      color: $light;
+      p {
+        font-size: 1.5rem;
+      }
 
       .navlink {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-decoration: underline;
         text-underline-offset: 5px;
-        color: $red;
+        color: $lightGrey;
         padding: 0 0.35rem;
 
         &:hover,
         &:focus,
         &:active {
-          color: $red;
+          color: $lightYellow;
           text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page-not-found {
+    width: 90%;
+
+    .section-wrapper {
+      top: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-not-found {
+    width: auto;
+
+    .section-wrapper {
+      .page-info {
+        h1 {
+          font-size: 2rem;
+          text-align: left;
+        }
+      }
+
+      .about-text {
+        p {
+          font-size: 1.2rem;
+          text-align: left;
         }
       }
     }

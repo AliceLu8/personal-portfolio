@@ -1,23 +1,140 @@
 @use "../utilities/variables" as *;
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  z-index: 10;
-  background-color: $grey;
+header {
+  height: 100vh;
+
+  .header-wrapper {
+    height: 100%;
+    position: relative;
+    line-height: 1.3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h1 {
+      font-size: 6rem;
+      color: $featureColor;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 2;
+    }
+
+    .icon-socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      gap: 0.8rem;
+      left: 1rem;
+      bottom: 3rem;
+
+      &::after {
+        content: "";
+        width: 1.15px;
+        height: 3rem;
+        background-color: $dark;
+      }
+    }
+
+    .scroll-down {
+      position: absolute;
+      right: 0;
+      bottom: 3rem;
+    }
+  }
 }
 
-// .header-section-bg {
-//   background-color: rgb(228, 230, 231, 0.8);
-//   transition: 0.5s;
-// }
+// Media Queries (Medium Devices)
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
 
-.logo {
-  width: 60px;
-  margin-top: 0.5rem;
+    .header-wrapper {
+      line-height: 1.2;
+      h2 {
+        font-size: 3rem;
+      }
+
+      h1 {
+        font-size: 5.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+      .icon-socials {
+        svg {
+          width: 30px;
+        }
+      }
+
+      .scroll-down {
+        svg {
+          width: 50px;
+        }
+      }
+    }
+
+    section {
+      margin-top: 6rem;
+    }
+  }
+}
+
+// Media Queries (Small Devices)
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    padding-bottom: 4rem;
+
+    .header-wrapper {
+      h2 {
+        font-size: 2rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      h3 {
+        font-size: 0.9rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .icon-socials {
+        gap: 0rem;
+        left: 0;
+        bottom: 2rem;
+        svg {
+          width: 20px;
+        }
+      }
+
+      .scroll-down {
+        bottom: 1rem;
+      }
+    }
+  }
 }

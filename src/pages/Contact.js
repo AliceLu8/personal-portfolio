@@ -10,7 +10,7 @@ function Contact() {
       <div className="contact-container">
         <div className="contact-info">
           <div className="connect">
-            <div>Ready to Connect...</div>
+            <h4>Ready to Connect...</h4>
           </div>
           <p>
             Like what I created!! Have a question or want to work together.
@@ -20,10 +20,10 @@ function Contact() {
 
         <div className="header-socials">
           <a href="https://www.linkedin.com/in/aliceludesign/">
-            <FiLinkedin size={30} />
+            <FiLinkedin size={40} />
           </a>
           <a href="https://github.com/AliceLu8">
-            <FiGithub size={30} />
+            <FiGithub size={40} />
           </a>
         </div>
 

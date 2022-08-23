@@ -1,42 +1,45 @@
 @use "../utilities/variables" as *;
+
 .contact-wrapper {
-    
-.contact-container {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-  
-//   text-align: center;
-//   padding: 2rem 0 3rem 0;
-//   background-color: grey;
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 35rem;
+    padding: 2rem 0 3rem 0;
 
-  .connect {
-    font-size: 2rem;
-    font-weight: 700;
+    .connect {
+      h4 {
+        font-size: 2.5rem;
+        font-weight: 900;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      padding-bottom: 2rem;
+      color: $textColor;
+    }
+
+    .contact-info {
+      text-align: left;
+    }
   }
 
-  p {
-    padding-bottom: 0.75rem;
-    color: $textColor;
-  }
+  .header-socials {
+    padding: 0 0 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 
-  .contact-info {
-    text-align: left;
-  }
-}
-
-.header-socials {
-  padding: 0 0 0.5rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-
-  svg {
-    color: $lightYellow;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $lightGrey;
+    svg {
+      &:hover,
+      &:focus,
+      &:active {
+        color: $lightGrey;
+      }
     }
   }
 
@@ -44,7 +47,7 @@
     p {
       color: $textColor;
       font-weight: 600;
-      padding: 3rem 0 1rem 0;
+      padding: 1rem 0;
     }
 
     // A-link button styling modified from
@@ -68,7 +71,7 @@
       left: 0;
       display: block;
       border-radius: 1.75rem;
-      background: rgb(9, 34, 68);
+      background: rgba(101, 185, 215, 0.6);
       width: 2.5rem;
       height: 2.5rem;
       transition: all 0.3s ease;
@@ -77,7 +80,7 @@
       position: relative;
       font-size: 1rem;
       line-height: 1.5rem;
-      font-weight: 600;
+      font-weight: bold;
       letter-spacing: 0.25em;
       text-transform: uppercase;
       vertical-align: middle;
@@ -96,7 +99,7 @@
     }
     .cta:hover:before {
       width: 100%;
-      background: #78b2cf;
+      background: rgba(101, 185, 215, 0.6);
     }
     .cta:hover svg {
       transform: translateX(0);
@@ -107,4 +110,45 @@
     // ----- Ending here (Codepen animated button)
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .contact-wrapper {
+    .contact-container {
+      width: 30rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-wrapper {
+    .contact-container {
+      width: 80%;
+
+      .contact-info {
+        .connect {
+          h4 {
+            font-size: 2rem;
+          }
+        }
+        p {
+          font-size: 1rem;
+          // padding-bottom: 1rem;
+        }
+      }
+
+      .header-socials {
+        gap: 2rem;
+
+        svg {
+          width: 35px;
+        }
+      }
+
+      .email-container {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 }

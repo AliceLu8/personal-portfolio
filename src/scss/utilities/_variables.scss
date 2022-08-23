@@ -1,23 +1,29 @@
 // Colors
 $textColor: #092244;
-$featureColor: #78b2cf;
-$hover: #4c5990;
-$linkColor: #8eb4bd;
+$featureColor: #65b9d7;
 $headerBg: #092244;
 $socialIconColor: #274247;
-$btnColor: #b09cff;
-$btnHoverColor: #4b9152;
-// $navHoverColor: #65b9d7;
-$border: #e6e6e6;
+$btnColor: #e6e6e6;
+$btnDarkColor: #092244;
+$btnHoverColor: #65b9d7;
+$btnPrimaryHover: #65b9d7;
+$lightBgColor: #e6e6e6;
+$darkBgColor: #092244;
 
+// a-link Color:
+$hover: #65b9d7;
+$linkColor: #feae4bcc;
+
+// Navigation Color:
+$navBgColor: rgb(9, 34, 68, 0.85);
+$navMobileBgColor: #092244;
 // Mobile Nav Color:
-$mobileNavBgColor: #092244;
 $mobileNavLinkColor: #e6e6e6;
-$mobileNavHoverColor: #8e94ac4d;
-$activeNav: #282e36;
-$activeNavColor: #475261;
+$mobileNavHoverColor: #65b9d7;
+$mobileNavHoverTextColor: #092244;
+$activeNav: #e6e6e6;
+$activeNavColor: #0c1a2d;
 
-// $sideNavBgColor: #161D30;
 // Desktop Side Nav Color:
 $sideNavBgColor: #2c3e5b;
 $sideNavHoverColor: #65b9d7;

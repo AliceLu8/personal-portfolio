@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Header from "../components/Header";
+import { HashLink } from "react-router-hash-link";
 
 // Import React icons
 import { AiOutlineHome } from "react-icons/ai";
@@ -9,39 +8,29 @@ import { HiOutlineMail } from "react-icons/hi";
 
 function NavBar() {
   return (
-    <div className="header">
-      <Header />
+    <>
       <nav>
-        <ul className="navbar-menu wrapper">
+        <ul>
           <li>
-            <Link to="/home">
-              <div className="icon-desktop">
-                <AiOutlineHome size={25} />
-              </div>
-              Home
-            </Link>
+            <HashLink to="#home" smooth>
+              <AiOutlineHome size={25} />
+            </HashLink>
           </li>
 
           <li>
-            <Link to="/work">
-              <div className="icon-desktop">
-                <HiCode size={25} />
-              </div>
-              Work
-            </Link>
+            <HashLink to="#work" smooth>
+              <HiCode size={25} />
+            </HashLink>
           </li>
 
           <li>
-            <Link to="/contact">
-              <div className="icon-desktop">
-                <HiOutlineMail size={25} />
-              </div>
-              Contact
-            </Link>
+            <HashLink to="#contact" smooth>
+              <HiOutlineMail size={25} />
+            </HashLink>
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 }
 

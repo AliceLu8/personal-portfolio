@@ -1,36 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 
+import Header from "../components/Header";
 import NavBar from "../components/NavBar";
-import Intro from "../components/Intro";
 import About from "../pages/About";
 import Work from "../pages/Work";
 import Contact from "../pages/Contact";
 import Footer from "../components/Footer";
 
-// Import React icons
-import { TiArrowDownOutline } from "react-icons/ti";
-
 function Home() {
+  // Start from the Top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="home-wrapper" id="home">
+    <section>
+      <Header />
       <NavBar />
-
-      <div className="container">
-        <Intro />
-        {/* <h2>hello, I'm</h2>
-        <h1>Alice Lu</h1>
-        <h3>a Front-End Developer | Designer</h3>
-        <p>based in Vancouver, BC, Canada</p>
-
-        <a href="#about" className="scroll-down">
-          <TiArrowDownOutline size={50} />
-        </a> */}
-        <About />
-        <Work />
-        <Contact />
-        <Footer />
-      </div>
-    </div>
+      <About />
+      <Work />
+      <Contact />
+      <Footer />
+    </section>
   );
 }
 

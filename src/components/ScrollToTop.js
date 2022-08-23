@@ -31,7 +31,7 @@ function ScrollToTop() {
 
   return (
     <div className="scroll-to-top">
-      {scrollToTop && <IoMdArrowDropupCircle size={50} onClick={scrollUp} />}
+      {scrollToTop && <IoMdArrowDropupCircle size={60} onClick={scrollUp} />}
     </div>
   );
 }

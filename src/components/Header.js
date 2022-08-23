@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../logo/logo.png";
+import React from "react";
+
+import IconSocials from "./IconSocials";
+
+// Import React icons
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 function Header() {
-  const [color, setColor] = useState(false);
-  const changeColor = () => {
-    if (window.scrollY >= 50) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-  window.addEventListener("scroll", changeColor);
-
   return (
-    <div>
-      {/* <div className={color ? "header header-section-bg" : "header"}> */}
-      <Link to="/home">
-        <img src={logo} alt="logo" className="logo" />
-        {/* <h1>logo</h1> */}
-      </Link>
-      {/* </div> */}
-    </div>
+    <header id="home">
+      <div className="wrapper header-wrapper">
+        <h2>hello, I'm</h2>
+        <h1>Alice Lu</h1>
+        <h3>
+          a <span>Front-End Developer | Designer</span>
+        </h3>
+        <p>based in Vancouver, BC, Canada</p>
+
+        <a href="#about" className="scroll-down">
+          <BsChevronDoubleDown size={70} />
+        </a>
+        <IconSocials />
+      </div>
+    </header>
   );
 }
 

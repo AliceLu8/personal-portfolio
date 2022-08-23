@@ -1,5 +1,25 @@
+// Media Queries Responsive Sizes:
+
+// Desktop Devices
 .wrapper {
-  max-width: 1200px;
+  width: var(--container-width-lg);
   margin: 0 auto;
-  background-color: lightgrey;
+}
+
+// Media Queries (Medium Devices)
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 1rem;
+  }
+}
+
+// Media Queries (Small Devices)
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: var(--container-width-sm);
+  }
 }

@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.246fab26.css",
+    "main.js": "/static/js/main.9ecdcffd.js",
+    "static/media/mockup-fetch-banner-a.png": "/static/media/mockup-fetch-banner-a.0703b45da81e2fb504b1.png",
+    "static/media/mockup-fetch-banner.png": "/static/media/mockup-fetch-banner.092c79cca8119fdade62.png",
+    "static/media/mockup-moogle-banner.png": "/static/media/mockup-moogle-banner.5d7d7eb50c10531cce5b.png",
+    "static/media/fetch-mockup-a.png": "/static/media/fetch-mockup-a.995a9bb88d6ed8fa7e1c.png",
+    "static/media/moogle-mockup-a.png": "/static/media/moogle-mockup-a.8669522afda1c3d788d4.png",
+    "static/media/moogle-mockup-c.png": "/static/media/moogle-mockup-c.e8fcd7d8637e1276bbac.png",
+    "static/media/mockup-moogle-banner-a.png": "/static/media/mockup-moogle-banner-a.fd2b6fbe93437292956d.png",
+    "static/media/moogle-mockup-b.png": "/static/media/moogle-mockup-b.b1c421f59d95b0b1498b.png",
+    "static/media/mockup-portfolio-banner.png": "/static/media/mockup-portfolio-banner.80b8412fbd8aec96f152.png",
+    "static/media/portfolio-mockup-b.png": "/static/media/portfolio-mockup-b.2fe085546d36b7083d4d.png",
+    "static/media/fetch-mockup-b.png": "/static/media/fetch-mockup-b.3bb92298c0d867b57b9d.png",
+    "static/media/fetch-mockup-c.png": "/static/media/fetch-mockup-c.9530a2f8dd5de0148d1c.png",
+    "static/media/portfolio-mockup-c.png": "/static/media/portfolio-mockup-c.a2342c41d5cd75e2412d.png",
+    "static/media/portfolio-mockup-a.png": "/static/media/portfolio-mockup-a.4c9bb66fd7238ee70437.png",
+    "static/media/mockup-portfolio-banner-a.png": "/static/media/mockup-portfolio-banner-a.58ede5922d2ea77003ea.png",
+    "index.html": "/index.html",
+    "main.246fab26.css.map": "/static/css/main.246fab26.css.map",
+    "main.9ecdcffd.js.map": "/static/js/main.9ecdcffd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.246fab26.css",
+    "static/js/main.9ecdcffd.js"
+  ]
+}

@@ -5,6 +5,7 @@ h2,
 h3,
 h4,
 h5 {
+  font-size: 1rem;
   font-weight: 400;
   color: $textColor;
   font-family: $headingFont;
@@ -12,7 +13,6 @@ h5 {
 
 h1 {
   margin: 0;
-  // font-size: 4.75rem;
   font-size: 2rem;
   font-family: $headingFont;
   color: $textColor;
@@ -23,14 +23,14 @@ p {
   font-size: 1rem;
   color: $textColor;
   margin: 0;
-  font-family: $headingFont;
+  font-family: $bodyFont;
 }
 
 a {
   color: $linkColor;
   transition: var(--transition);
   text-decoration: none;
-  font-family: $headingFont;
+  font-family: $bodyFont;
 }
 
 a:hover {
@@ -47,22 +47,24 @@ ul {
 
 .btn {
   width: max-content;
-  display: inline-block;
-  color: $btnColor;
-  padding: 0.7rem 1rem;
-  border-radius: 15px;
   cursor: pointer;
-  border: 1px solid black;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
+  color: $btnDarkColor;
+  background: $darkBgColor;
   transition: var(--transition);
-}
+  border: 1px solid $btnColor;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: all 0.3s ease;
 
-.btn:hover {
-  background: $btnHoverColor;
-  color: black;
-  border-color: transparent;
+  &:hover {
+    background: $btnHoverColor;
+    border-color: transparent;
+  }
 }
 
 .btn-primary {
-  background: $hover;
-  color: black;
+  color: $btnDarkColor;
+  background: $btnPrimaryHover;
 }

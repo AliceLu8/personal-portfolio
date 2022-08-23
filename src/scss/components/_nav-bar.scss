@@ -1,50 +1,57 @@
 @use "../utilities/variables" as *;
 
-.navbar-menu {
-  display: flex;
-}
+nav {
+  background-color: $navBgColor;
+  width: max-content;
+  padding: 0.75rem;
+  display: block;
+  position: fixed;
+  left: 50%;
+  bottom: 2.5rem;
+  z-index: 10;
+  transform: translateX(-50%);
+  border-radius: 3rem;
 
-.navbar-menu li {
-  padding: 0 1rem;
-}
-
-.navbar-menu li a {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.icon-desktop {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar-menu {
+  ul {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: max-content;
-    background-color: $headerBg;
-    position: fixed;
+    gap: 2rem;
+    margin: 0 1rem;
+
+    li {
+      a {
+        background: transparent;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        color: $mobileNavLinkColor;
+
+        &:hover {
+          background-color: $mobileNavHoverColor;
+          color: $mobileNavHoverTextColor;
+        }
+
+        &:active {
+          background: $activeNavColor;
+          color: $activeNav;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries (Small Devices)
+@media screen and (max-width: 600px) {
+  nav {
+    background-color: $navMobileBgColor;
     bottom: 0;
-    left: 0;
-    z-index: 5;
-  }
+    width: 100%;
+    border-radius: 0;
 
-  .navbar-menu li {
-    padding: 1rem 0;
-  }
-
-  .navbar-menu li a {
-    font-size: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2.5rem;
-  }
-
-  .icon-desktop {
-    display: initial;
+    ul {
+      gap: 4rem;
+    }
   }
 }

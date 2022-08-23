@@ -16,19 +16,18 @@ font-family: 'Zen Dots', cursive;
 // Components
 @import "../scss/components/body.scss";
 @import "../scss/components/header.scss";
-// @import "../scss/components/icon-socials.scss";
 @import "../scss/components/nav-bar.scss";
-@import "../scss/components/intro.scss";
-// @import "../scss/components/footer.scss";
-// @import "../scss/components/scroll-to-top.scss";
-// @import "../scss/components/wrapper.scss";
+@import "../scss/components/footer.scss";
+@import "../scss/components/scroll-to-top.scss";
+@import "../scss/components/carousel.scss";
+@import "../scss/components/wrapper.scss";
 
 // Pages
-@import "../scss/pages/home.scss";
-// @import "../scss/pages/about.scss";
-// @import "../scss/pages/contact.scss";
-// @import "../scss/pages/work.scss";
-// @import "../scss/pages/404.scss";
+@import "../scss/pages/about.scss";
+@import "../scss/pages/contact.scss";
+@import "../scss/pages/work.scss";
+@import "../scss/pages/single-work.scss";
+@import "../scss/pages/404.scss";
 
 // Utilities
 @import "../scss/utilities/sr-only.scss";
