@@ -1,28 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a108b81.css",
-    "main.js": "/static/js/main.8239046d.js",
+    "main.css": "/static/css/main.f95394d0.css",
+    "main.js": "/static/js/main.1a320689.js",
+    "static/media/mockup-convex-banner-a.png": "/static/media/mockup-convex-banner-a.bcb80015f1ea92801f88.png",
     "static/media/mockup-fetch-banner-a.png": "/static/media/mockup-fetch-banner-a.0703b45da81e2fb504b1.png",
+    "static/media/mockup-convex-banner.png": "/static/media/mockup-convex-banner.2f392255075bf7b585d1.png",
     "static/media/mockup-fetch-banner.png": "/static/media/mockup-fetch-banner.092c79cca8119fdade62.png",
     "static/media/mockup-moogle-banner.png": "/static/media/mockup-moogle-banner.5d7d7eb50c10531cce5b.png",
     "static/media/fetch-mockup-a.png": "/static/media/fetch-mockup-a.995a9bb88d6ed8fa7e1c.png",
     "static/media/moogle-mockup-a.png": "/static/media/moogle-mockup-a.8669522afda1c3d788d4.png",
     "static/media/moogle-mockup-c.png": "/static/media/moogle-mockup-c.e8fcd7d8637e1276bbac.png",
     "static/media/mockup-moogle-banner-a.png": "/static/media/mockup-moogle-banner-a.fd2b6fbe93437292956d.png",
+    "static/media/convex-mockup-c.png": "/static/media/convex-mockup-c.2a1b53b69105cb1114f1.png",
+    "static/media/convex-mockup-a.png": "/static/media/convex-mockup-a.c0947348476a2459fac7.png",
+    "static/media/convex-mockup-b.png": "/static/media/convex-mockup-b.e72db2261110a70e4e2d.png",
     "static/media/moogle-mockup-b.png": "/static/media/moogle-mockup-b.b1c421f59d95b0b1498b.png",
+    "static/media/portfolio-mockup-b.png": "/static/media/portfolio-mockup-b.e9471662abcc8e17b27c.png",
     "static/media/mockup-portfolio-banner.png": "/static/media/mockup-portfolio-banner.80b8412fbd8aec96f152.png",
-    "static/media/portfolio-mockup-b.png": "/static/media/portfolio-mockup-b.2fe085546d36b7083d4d.png",
+    "static/media/portfolio-mockup-a.png": "/static/media/portfolio-mockup-a.1f2d1fc02972307aadbc.png",
     "static/media/fetch-mockup-b.png": "/static/media/fetch-mockup-b.3bb92298c0d867b57b9d.png",
+    "static/media/portfolio-mockup-c.png": "/static/media/portfolio-mockup-c.db49ee57820eb050323d.png",
     "static/media/fetch-mockup-c.png": "/static/media/fetch-mockup-c.9530a2f8dd5de0148d1c.png",
-    "static/media/portfolio-mockup-c.png": "/static/media/portfolio-mockup-c.a2342c41d5cd75e2412d.png",
-    "static/media/portfolio-mockup-a.png": "/static/media/portfolio-mockup-a.4c9bb66fd7238ee70437.png",
     "static/media/mockup-portfolio-banner-a.png": "/static/media/mockup-portfolio-banner-a.58ede5922d2ea77003ea.png",
     "index.html": "/index.html",
-    "main.3a108b81.css.map": "/static/css/main.3a108b81.css.map",
-    "main.8239046d.js.map": "/static/js/main.8239046d.js.map"
+    "main.f95394d0.css.map": "/static/css/main.f95394d0.css.map",
+    "main.1a320689.js.map": "/static/js/main.1a320689.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a108b81.css",
-    "static/js/main.8239046d.js"
+    "static/css/main.f95394d0.css",
+    "static/js/main.1a320689.js"
   ]
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import Convex from "../images/mockup-convex-banner.png";
 import Movie from "../images/mockup-moogle-banner.png";
 import Fetch from "../images/mockup-fetch-banner.png";
 import Portfolio from "../images/mockup-portfolio-banner.png";
@@ -17,14 +18,33 @@ function Work() {
         <h2>Featured Projects</h2>
         <div className="project-container">
           <div className="project-card">
+            <img src={Convex} alt="convex" />
+            <div className="description-box">
+              <h3>Convex</h3>
+              <p className="project-length">4 Weeks</p>
+              <p className="project-tools">PHP, WordPress and Figma</p>
+              <p className="project-details">
+                Convex Architecture is a home development company that offers
+                customized interior and exterior home design services for
+                homeowners who are looking to upgrade their houses.
+              </p>
+            </div>
+
+            <div className="btn">
+              <Link to="/singlework/convex">Learn More</Link>
+            </div>
+          </div>
+
+          <div className="project-card">
             <img src={Movie} alt="movie" />
             <div className="description-box">
               <h3>Moogle</h3>
               <p className="project-length">5 Weeks</p>
               <p className="project-tools">React, SCSS, Adobe Photoshop</p>
               <p className="project-details">
-                Moogle movie database is a React JS web application that lets
-                users browse, find, and keep track of their favourite movies.
+                Moogle Movie Database is a web application built using React JS
+                that enables users to browse, find, and keep track of their
+                favorite movies.
               </p>
             </div>
 
@@ -37,12 +57,12 @@ function Work() {
             <img src={Fetch} alt="fetch" />
             <div className="description-box">
               <h3>Fetch</h3>
-              <p className="project-length">5 Weeks</p>
+              <p className="project-length">6 Weeks</p>
               <p className="project-tools">WordPress, PHP, SASS, WooCommerce</p>
               <p className="project-details">
-                The dog walking company, is an E-Commerce website designed and
-                created for dog owners to book their appointments with their
-                personal dog-walker.
+                The dog walking company is an e-commerce website designed and
+                created for dog owners to book appointments with their personal
+                dog walker.
               </p>
             </div>
 
@@ -58,8 +78,8 @@ function Work() {
               <p className="project-length">4 Weeks</p>
               <p className="project-tools">React, SCSS, Adobe Photoshop</p>
               <p className="project-details">
-                A website where I showcase my personal design skills, abilities,
-                and the projects that I have completed.
+                A website where I showcase my personal design portfolio,
+                including my skills, abilities, and completed projects.
               </p>
             </div>
 

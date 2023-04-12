@@ -27,10 +27,11 @@ p {
 }
 
 a {
-  color: $linkColor;
+  color: black;
   transition: var(--transition);
   text-decoration: none;
   font-family: $bodyFont;
+  cursor: pointer;
 }
 
 a:hover {

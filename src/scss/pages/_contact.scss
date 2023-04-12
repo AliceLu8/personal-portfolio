@@ -62,7 +62,7 @@
       position: relative;
       padding: 0.4rem 0.5rem;
       transition: all 0.2s ease;
-      color: $lightYellow;
+      color: $darkBlue;
     }
     .cta:before {
       content: "";
@@ -71,7 +71,7 @@
       left: 0;
       display: block;
       border-radius: 1.75rem;
-      background: rgba(101, 185, 215, 0.6);
+      background: rgba(230, 137, 23, 0.642);
       width: 2.5rem;
       height: 2.5rem;
       transition: all 0.3s ease;
