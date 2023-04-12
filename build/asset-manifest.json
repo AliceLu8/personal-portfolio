@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.f95394d0.css",
-    "main.js": "/static/js/main.1a320689.js",
+    "main.js": "/static/js/main.a1700899.js",
     "static/media/mockup-convex-banner-a.png": "/static/media/mockup-convex-banner-a.bcb80015f1ea92801f88.png",
     "static/media/mockup-fetch-banner-a.png": "/static/media/mockup-fetch-banner-a.0703b45da81e2fb504b1.png",
-    "static/media/mockup-convex-banner.png": "/static/media/mockup-convex-banner.2f392255075bf7b585d1.png",
+    "static/media/mockup-convex-banner.png": "/static/media/mockup-convex-banner.bb31e7375fe4a96bf50c.png",
     "static/media/mockup-fetch-banner.png": "/static/media/mockup-fetch-banner.092c79cca8119fdade62.png",
     "static/media/mockup-moogle-banner.png": "/static/media/mockup-moogle-banner.5d7d7eb50c10531cce5b.png",
     "static/media/fetch-mockup-a.png": "/static/media/fetch-mockup-a.995a9bb88d6ed8fa7e1c.png",
@@ -24,10 +24,10 @@
     "static/media/mockup-portfolio-banner-a.png": "/static/media/mockup-portfolio-banner-a.58ede5922d2ea77003ea.png",
     "index.html": "/index.html",
     "main.f95394d0.css.map": "/static/css/main.f95394d0.css.map",
-    "main.1a320689.js.map": "/static/js/main.1a320689.js.map"
+    "main.a1700899.js.map": "/static/js/main.a1700899.js.map"
   },
   "entrypoints": [
     "static/css/main.f95394d0.css",
-    "static/js/main.1a320689.js"
+    "static/js/main.a1700899.js"
   ]
 }
